@@ -1,0 +1,71 @@
+header.header
+    .container
+        .header__inner
+            .header__logo.logo
+                .logo__wrapper
+                    .logo__icon
+                        a.logo__icon-svg(href="#")
+                            +icon('logo-icon','logo__icon-svg')
+                    .logo__name
+                        a.logo__name-link(href="#") ATLANTIDA
+
+                //----------------- BUTTON FOR MOBILE NAVIGATION----------------
+            #menu-toggle.menu-icon
+                .menu-icon__line
+
+                //----------------- MOBILE NAVIGATION----------------
+            #mobile-nav.mobile-nav
+                ul.mobile-nav-list
+                    li.mobile-nav-item
+                        a.mobile-nav-link(href="#") Home
+                    li.mobile-nav-item
+                        a.mobile-nav-link(href="#") About
+                    li.mobile-nav-item
+                        a.mobile-nav-link(href="#") SERVICES
+                    li.mobile-nav-item
+                        a.mobile-nav-link(href="#") History
+                    li.mobile-nav-item
+                        a.mobile-nav-link(href="#") Team
+                    li.mobile-nav-item
+                        a.mobile-nav-link(href="#") Portfolio
+                    li.mobile-nav-item
+                        a.mobile-nav-link(href="#") Prices
+                    li.mobile-nav-item
+                        a.mobile-nav-link(href="#") Blog
+                    li.mobile-nav-item
+                        a.mobile-nav-link(href="#") Contact
+
+
+                //----------------- DESKTOP NAVIGATION----------------
+            nav.header__nav
+                ul.header__nav-list
+                    li.header__nav-item
+                        a.header__nav-link(href="#") Home
+                    li.header__nav-item
+                        a.header__nav-link(href="#") About
+                    li.header__nav-item
+                        a.header__nav-link(href="#") SERVICES
+                    li.header__nav-item
+                        a.header__nav-link(href="#") History
+                    li.header__nav-item
+                        a.header__nav-link(href="#") Team
+                    li.header__nav-item
+                        a.header__nav-link(href="#") Portfolio
+                    li.header__nav-item
+                        a.header__nav-link(href="#") Prices
+                    li.header__nav-item
+                        a.header__nav-link(href="#") Blog
+                    li.header__nav-item
+                        a.header__nav-link(href="#") Contact
+
+            .header__icons.general-icons
+                ul.general-icons__list
+                    li.general-icons__item
+                        a(href="#").general-icons__link
+                            +icon('facebook','general-icons__icon')
+                    li.general-icons__item
+                        a(href="#").general-icons__link
+                            +icon('twitter','general-icons__icon')
+                    li.general-icons__item
+                        a(href="#").general-icons__link
+                            +icon('behance','general-icons__icon')

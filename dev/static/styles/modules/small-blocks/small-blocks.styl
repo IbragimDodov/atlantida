@@ -1,0 +1,45 @@
+
+.logo
+    z-index 11
+    &__wrapper
+        display flex
+        justify-content space-between
+        align-items center
+    &__icon-svg
+        width 40px
+        height 30px
+    &__name
+        &-link
+            font-family $font-family-MS
+            font-size 18px
+            color rgb(170, 170, 170)
+            line-height 2.7
+            text-transform uppercase
+            padding-left 10px
+
+
+// .atl
+//     font-size 35px
+//     font-family $font-family-A
+//     color $black
+//     text-transform uppercase
+
+
+.general-icons
+    display none
+    &__item
+        border-right 1px solid #aaaaaa
+        &:last-child
+            border-right none
+    &__link
+        padding-right 5px
+        padding-left 5px
+    &__icon
+        width 16px
+        height 10px
+        fill #aaaaaa
+        &:hover
+            fill #616161
+
+    @media(min-width $grid-lg)
+        display block
