@@ -43,3 +43,51 @@
 
     @media(min-width $grid-lg)
         display block
+
+
+.flex-start
+    justify-content flex-start
+
+//----------------- FORM BLOCK ----------------
+
+.general-form
+    display flex
+    justify-content space-between
+    align-items center
+    flex-wrap wrap
+
+.general-form__input,
+.general-form__textarea
+    display block
+    font-size 14px
+    font-family $font-family-CT
+    color rgb(148, 148, 148)
+    font-style italic
+    line-height 1.4
+    padding 13px
+    margin-bottom 20px
+    background-color transparent
+    outline none
+    border 2px solid #464646
+
+
+.general-form__input
+    width 48%
+
+.general-form__textarea
+    width 100%
+    height 90px
+
+.general-form__button
+    background-color #464646
+    padding 15px 45px
+    outline none
+    border none
+    font-size 14px
+    color rgb(227, 227, 227)
+    line-height 1.1
+    cursor pointer
+    &:hover
+        background-color transparent
+        border 2px solid #464646
+
