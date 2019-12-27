@@ -1,0 +1,92 @@
+.about-us
+    background-color #e3e3e3
+    padding-top 70px
+    @media(min-width $grid-md)
+        padding-bottom 70px
+
+    &__top-block
+        &-inner
+            background-color #fff
+            text-align center
+
+        &-img
+            width 100%
+
+        &-image
+            width 100%
+            height auto
+
+        &-descr
+            padding 55px 70px 50px
+
+    &__btn-link
+        margin-top 15px
+        margin-left 5px
+        width 100%
+        @media(min-width $grid-sm)
+            margin-top 50px
+            width auto
+
+.awards
+    display flex
+    flex-wrap wrap
+    justify-content center
+    align-items center
+    padding 0 35px
+
+    // @media(min-width $grid-lg)
+    // @media(min-width $grid-xl)
+    // @media(min-width $grid-sm)
+    // @media(min-width $grid-md)
+
+.awards__item
+    width 100%
+    margin-top 30px
+    padding-right 80px
+    padding-left 80px
+    padding-bottom 30px
+    // &:last-child
+    //     padding-bottom 0
+    text-align center
+    border-bottom 1px solid #b0b0b0
+    &:last-child
+        border-bottom none
+
+    @media(min-width $grid-md)
+        display flex
+        justify-content center
+        align-items center
+        flex-direction column
+        width 35%
+        border-bottom none
+        border-right 1px solid #b0b0b0
+
+    @media(min-width $grid-lg)
+        width 24%
+        &:last-child
+            border-right none
+
+
+    //         display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // flex-direction: column;
+    // width: 35%;
+
+.awards__item-name
+    margin-top 20px
+    margin-bottom 20px
+    font-size 14px
+    font-family $font-family-MS
+    color #3e3d3d
+    line-height 1.3
+    text-transform uppercase
+    font-weight 700
+
+
+.awards__item-count
+    font-size 45px
+    font-family $font-family-MS
+    color #3e3d3d
+    line-height 1
+    font-weight 700

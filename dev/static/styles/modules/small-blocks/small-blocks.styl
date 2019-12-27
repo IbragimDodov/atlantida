@@ -18,13 +18,6 @@
             padding-left 10px
 
 
-// .atl
-//     font-size 35px
-//     font-family $font-family-A
-//     color $black
-//     text-transform uppercase
-
-
 .general-icons
     display none
     &__item
@@ -56,6 +49,26 @@
     align-items center
     flex-wrap wrap
 
+    &__input
+        width 48%
+
+    &__textarea
+        width 100%
+        height 90px
+
+    &__button
+        background-color #464646
+        padding 15px 45px
+        outline none
+        border none
+        font-size 14px
+        color rgb(227, 227, 227)
+        line-height 1.1
+        cursor pointer
+        &:hover
+            background-color transparent
+            border 2px solid #464646
+
 .general-form__input,
 .general-form__textarea
     display block
@@ -71,23 +84,63 @@
     border 2px solid #464646
 
 
-.general-form__input
-    width 48%
+//----------------- FORM BLOCK END ----------------
 
-.general-form__textarea
-    width 100%
-    height 90px
+.general-title-black
+    display inline-block
+    position relative
+    font-size 20px
+    font-family $font-family-A
+    color rgb(62, 61, 61)
+    line-height 1.5
+    padding 0 20px 30px
+    &:after
+        content ""
+        position absolute
+        bottom 0
+        left 0
+        right 0
+        background-repeat repeat
+        height 5px
+        background-image url("../../static/images/general/wave-line-black.png")
 
-.general-form__button
-    background-color #464646
+.general-title-white
+    display inline-block
+    position relative
+    font-size 20px
+    font-family $font-family-A
+    color rgb(62, 61, 61)
+    line-height 1.5
+    padding 0 20px 30px
+    &:after
+        content ""
+        position absolute
+        bottom 0
+        left 0
+        right 0
+        background-repeat repeat
+        height 5px
+        background-image url("../../static/images/general/wave-line-white.png")
+
+.general-text
+    font-size 14px
+    font-family $font-family-CT
+    color rgb(62, 61, 61)
+    line-height 1.7
+    text-align left
+    margin-top 40px
+
+.general-btn-link
+    display inline-block
+    background-color transparent
     padding 15px 45px
     outline none
     border none
+    border 2px solid #3e3d3d
     font-size 14px
-    color rgb(227, 227, 227)
+    color #3e3d3d
     line-height 1.1
     cursor pointer
     &:hover
-        background-color transparent
-        border 2px solid #464646
-
+        background-color #3e3d3d
+        color #ffffff

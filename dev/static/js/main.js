@@ -1,5 +1,15 @@
 $(document).ready(function () {
     svg4everybody({});
+
+
+    $('.index-slider__items').slick({
+        nextArrow: '<button type="button" class="slick-btn slick-next"></button>',
+        prevArrow: '<button type="button" class="slick-btn slick-prev"></button>',
+        infinite: false
+    })
+
+
+
 });
 
 
@@ -13,3 +23,6 @@ menuToggle.onclick = function() {
     menuToggle.classList.toggle('menu-icon-active');
     mobileNavToggle.classList.toggle('mobile-nav--active');
 };
+
+
+

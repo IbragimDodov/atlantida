@@ -1,0 +1,148 @@
+.index-slider-items-wrapper
+    position relative
+
+.index-slider
+    background-image url('../../static/images/content/index-sleder-bg.jpg')
+    background-repeat no-repeat
+    background-size cover
+    background-position center
+
+    &__items
+        padding-top 90px
+        padding-bottom 90px
+
+        @media (min-width: $grid-lg)
+            padding-top 190px
+            padding-bottom 200px
+
+    &__item
+        display flex
+        align-items center
+        justify-content center
+        flex-direction column
+
+    &__suptitle
+        font-size 14px
+        font-family $font-family-CT
+        color rgb(255, 255, 255)
+        line-height 3.5
+
+.index-slider__title
+    font-size 20px
+    text-align center
+    display inline-block
+    font-family $font-family-A
+    text-transform uppercase
+    position relative
+    padding 30px 20px
+    margin-bottom 40px
+    color rgb(255, 255, 255)
+
+    @media (min-width: $grid-sm)
+        font-size 24px
+
+    @media (min-width: $grid-md)
+        font-size 35px
+
+    &:before
+        content ""
+        position absolute
+        top 0
+        left 0
+        right 0
+        background-repeat repeat
+        height 5px
+        background-image url("../../static/images/general/wave-line.png")
+
+    &:after
+        content ""
+        position absolute
+        bottom 0
+        left 0
+        right 0
+        background-repeat repeat
+        height 5px
+        background-image url("../../static/images/general/wave-line.png")
+
+
+.index-slider__btn
+    position relative
+    font-size 15px
+    background transparent
+    border 2px solid rgb(255, 255, 255)
+    margin-bottom 47px
+
+    transition .3s linear
+
+    &:after
+        display block
+        content ""
+        position absolute
+        width 15px
+        height 50px
+        bottom -44px
+        left 50%
+        transform translateX(-50%)
+        background-image url("../../static/images/content/index-slider-arrow.png")
+
+
+
+//-----------------FOR SLIDER AFTER CONNECT SLICK CAROUSEL----------------
+
+.index-slider__item.slick-slide.slick-current
+    display flex
+    align-items center
+    justify-content center
+    flex-direction column
+    outline none
+
+
+.slick-btn
+    width 34px
+    height 34px
+    border-radius 50%
+    border none
+    background-color rgb(255, 255, 255)
+    outline none
+    position absolute
+    top 41%
+    z-index 10
+    cursor pointer
+
+.slick-next
+    right 0
+
+.slick-btn.slick-disabled
+    cursor default
+    background-color transparent
+    border 1px solid rgb(255, 255, 255)
+
+// .slick-btn:before
+//     position absolute
+//     top 50%
+//     left 50%
+//     transform translate(-50%, -50%)
+//     color #fff
+
+.slick-next:before
+    content ""
+    display block
+    width 10px
+    height 10px
+    background-image url("./static/images/svg/angle-right.svg")
+    background-repeat no-repeat
+    background-size cover
+    background-position center
+
+
+
+// .slick-next
+//     right 0
+
+// .slick-next:before {
+//     content: "\f105";
+// }
+
+// .slick-prev:before {
+//     content: "\f104";
+// }
