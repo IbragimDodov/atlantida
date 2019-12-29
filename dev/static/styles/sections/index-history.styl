@@ -1,0 +1,234 @@
+.history
+    background-color #ededed
+    text-align center
+
+    &__title
+        margin-top 55px
+
+    &__text
+        margin-top 20px
+        margin-bottom 35px
+        text-align center
+        padding 0 30px
+
+        @media(min-width $grid-sm)
+            margin-top 40px
+            margin-bottom 45px
+
+        @media(min-width $grid-xl)
+            padding 0 250px
+
+.chronology-year
+    display block
+    left 85.3%
+    width 70px
+    height 70px
+    border 2px solid #464646
+    border-radius 100%
+    font-size 14px
+    color rgb(62, 61, 61)
+    text-align center
+    padding 25px 16px
+    position relative
+    &:after
+        content ""
+        position absolute
+        width 2px
+        height 100%
+        background-color #3e3d3d
+        bottom -100%
+        right 50%
+    @media(min-width $grid-sm)
+        left 47.4%
+
+.chronology-year-2015
+    top -35px
+    left 85.7%
+    @media(min-width $grid-sm)
+        top 11px
+        left 47.7%
+    @media(min-width $grid-lg)
+        left 47.4%
+
+.chronology-year-2014
+    display none
+    @media(min-width $grid-sm)
+        display block
+        top 1293px
+    &:after
+        height 30%
+        bottom -33%
+        right 47%
+
+    @media(min-width $grid-md)
+        top 1048px
+    @media(min-width $grid-lg)
+        &:after
+            height 100%
+            bottom -100%
+            right 50%
+        top 850px
+    @media(min-width $grid-xl)
+        top 654px
+    @media(min-width $grid-xxl)
+        top 633px
+
+.chronology-year--icon
+    display none
+    @media(min-width $grid-sm)
+        display block
+        left 47.9%
+        top -830px
+        background-color #000000
+        &:after
+            bottom 100%
+
+    @media(min-width $grid-md)
+        top -300px
+        left 47.7%
+    @media(min-width $grid-lg)
+        left 47.6%
+    @media(min-width $grid-xl)
+        left 47.4%
+
+.history__chronology-item
+    margin-top 15px
+    &:first-child
+        margin-top 0
+    width 85%
+    position relative
+    text-align left
+    border 2px solid #464646
+
+    @media(min-width $grid-sm)
+        width 47%
+        margin-top 0
+
+    &:before
+        content "⚫"
+        position absolute
+        width 2px
+        height 111%
+        background-color #3e3d3d
+        color #3e3d3d
+        font-size 17px
+        line-height 200%
+        text-indent -11px
+        top 0
+        @media(min-width $grid-sm)
+            height 105%
+        @media(min-width $grid-md)
+            height 112%
+
+    &:nth-child(odd)
+        padding 15px 15px 15px 15px
+        &:before
+            right -40px
+        &:after
+            content ""
+            position absolute
+            top 20px
+            right -20px
+            border 10px solid transparent
+            border-left 10px solid #000000
+            border-top 10px solid #000000
+        @media(min-width $grid-sm)
+            padding 30px 60px 30px 30px
+            &:before
+                right -42px
+
+    &:nth-child(even)
+        padding 15px 15px 15px 15px
+        &:before
+            right -40px
+        @media(min-width $grid-sm)
+            margin-left 62.5%
+            padding 30px 30px 30px 60px
+            &:before
+                left -43px
+            &:after
+                content ""
+                position absolute
+                top 20px
+                left -20px
+                border 10px solid transparent
+                border-top 10px solid #000000
+                border-right 10px solid #000000
+
+        @media(min-width $grid-md)
+            margin-left 58.5%
+
+        @media(min-width $grid-lg)
+            margin-left 55.5%
+
+        @media(min-width $grid-xl)
+            margin-left 54.1%
+
+        @media(min-width $grid-xxl)
+            margin-left 53%
+
+    &:hover
+        transition all .3s linear
+        background-color #3e3d3d
+        .history__chronology-item-title,
+        .history__chronology-item-data,
+        .history__chronology-item-text
+            color #e4e4e4
+
+    &-title
+        font-size 14px
+        font-family $font-family-MS
+        color rgb(62, 61, 61)
+        text-transform uppercase
+        line-height 1.3
+
+    &-data
+        font-size 12px
+        font-family $font-family-MS
+        color rgb(62, 61, 61)
+        line-height 1.6
+
+    &-text
+        font-size 14px
+        font-family $font-family-CT
+        color rgb(62, 61, 61)
+        line-height 1.4
+        margin-top 30px
+
+.top-366
+    top auto
+    @media(min-width $grid-sm)
+        top -866px
+    @media(min-width $grid-md)
+        top -366px
+
+.top-327
+    top auto
+    @media(min-width $grid-sm)
+        top -627px
+    @media(min-width $grid-md)
+        top -327px
+
+.top-195
+    top auto
+    @media(min-width $grid-sm)
+        top -515px
+    @media(min-width $grid-md)
+        top -195px
+
+.top-171
+    top auto
+    @media(min-width $grid-sm)
+        top -321px
+    @media(min-width $grid-md)
+        top -171px
+
+.top-156
+    top auto
+    @media(min-width $grid-sm)
+        top -310px
+    @media(min-width $grid-md)
+        top -156px
+
+.margin-top-15
+    margin-top 15px

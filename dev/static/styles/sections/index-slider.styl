@@ -117,32 +117,33 @@
     background-color transparent
     border 1px solid rgb(255, 255, 255)
 
-// .slick-btn:before
-//     position absolute
-//     top 50%
-//     left 50%
-//     transform translate(-50%, -50%)
-//     color #fff
+.slick-btn:before
+    position absolute
+    top 50%
+    left 50%
+    transform translate(-50%, -50%)
+    color #fff
 
 .slick-next:before
     content ""
     display block
-    width 10px
-    height 10px
-    background-image url("./static/images/svg/angle-right.svg")
+    top 16px
+    left 18px
+    width 8px
+    height 20px
+    background-image url("../images/general/angle-right.svg")
     background-repeat no-repeat
     background-size cover
     background-position center
 
-
-
-// .slick-next
-//     right 0
-
-// .slick-next:before {
-//     content: "\f105";
-// }
-
-// .slick-prev:before {
-//     content: "\f104";
-// }
+.slick-prev:before
+    content ""
+    display block
+    top 15px
+    left 15px
+    width 9px
+    height 20px
+    background-image url("../images/general/angle-left.svg")
+    background-repeat no-repeat
+    background-size cover
+    background-position center
