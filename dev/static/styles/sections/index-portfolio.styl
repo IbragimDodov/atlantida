@@ -1,0 +1,40 @@
+.portfolio
+    &__inner
+        text-align center
+    &__text
+        text-align center
+        padding 0 30px
+        margin-top 40px
+        margin-bottom 50px
+
+        @media(min-width $grid-sm)
+            margin-top 40px
+            margin-bottom 45px
+
+        @media(min-width $grid-xl)
+            padding 0 250px
+
+    &__title
+        margin-top 75px
+
+
+.tabs-nav__item
+    text-transform uppercase
+    padding 10px 20px
+    margin-bottom 65px
+    &.is-active
+        background-color #3e3d3d
+        color #ffffff
+
+.portfolio__tabs-content
+    display none
+    &.is-active
+        display block
+    &-inner
+        display flex
+        justify-content center
+    &-col1
+        width 25%
+    &-img
+        width 100%
+
