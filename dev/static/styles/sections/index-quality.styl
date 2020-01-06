@@ -1,0 +1,48 @@
+.quality
+    background-color #000000
+    padding-top 40px
+    padding-bottom 40px
+
+    &__inner
+        display flex
+        align-items center
+        flex-direction column
+        justify-content center
+
+        @media(min-width $grid-sm)
+            flex-direction row
+            justify-content space-between
+
+    &__img
+        margin-bottom 25px
+        @media(min-width $grid-sm)
+            margin-bottom 0
+
+    &__descr
+        width 75%
+        @media(min-width $grid-sm)
+            width 57%
+
+    &__title
+        font-size 18px
+        color rgb(216, 216, 216)
+        line-height 1.1
+        font-family $font-family-MS
+        margin-bottom 20px
+
+    &__text
+        font-size 18px
+        font-family $font-family-CT
+        color rgb(136, 136, 136)
+        font-style italic
+        line-height 1.25
+
+    &__btn
+        text-align center
+        margin-top 25px
+        width 80%
+        border 1px solid #ffffff
+        color #ffffff
+        @media(min-width $grid-sm)
+            margin-top 0
+            width auto
