@@ -1,0 +1,135 @@
+.comments
+    background-image url("../../static/images/content/comments-bg.jpg")
+    background-repeat no-repeat
+    background-size cover
+    background-position center
+    padding-top 70px
+    padding-bottom 60px
+
+.comments-slider
+    text-align center
+    display flex
+    align-items center
+    justify-content center
+
+    .slick-dots
+        display flex
+        justify-content center
+        align-items center
+        margin-top 45px
+        li
+            margin-left 3px
+            &:first-child
+                margin-left 0
+
+            &.slick-active
+                button
+                    background #e3e3e3
+        button
+            padding 0
+            border none
+            width 12px
+            height 12px
+            font-size 0
+            border-radius 50%
+            background #c5c5c5
+
+    &__item-author-photo
+        margin 0 auto
+
+.comments-slider__item-comment
+    font-size 20px
+    font-style italic
+    line-height 1.2
+    color rgb(239, 239, 239)
+    margin-top 45px
+    margin-bottom 65px
+    padding 0 15px
+    position relative
+    &:before
+        content ""
+        position absolute
+        font-size 32px
+        left 11px
+        top -8px
+        display block
+        background-image url("../images/content/quotes-1.png")
+        background-repeat no-repeat
+        background-size cover
+        background-position center
+        width 27px
+        height 21px
+
+        @media(min-width $grid-se)
+            left 0px
+        @media(min-width $grid-s5)
+            left 9px
+        @media(min-width $grid-iphone6)
+            left 38px
+        @media(min-width $grid-sm)
+            left 86px
+        @media(min-width $grid-md)
+            left 60px
+        @media(min-width $grid-xl)
+            left 75px
+    &:after
+        content ""
+        position absolute
+        font-size 32px
+        right 80px
+        top 180px
+        display block
+        background-image url("../images/content/quotes-2.png")
+        background-repeat no-repeat
+        background-size cover
+        background-position center
+        width 27px
+        height 21px
+
+        @media(min-width $grid-se)
+            right 11px
+            top 130px
+        @media(min-width $grid-s5)
+            right 20px
+            top 130px
+        @media(min-width $grid-iphone6)
+            right 110px
+            top 82px
+        @media(min-width $grid-sm)
+            right 98px
+            top 130px
+        @media(min-width $grid-md)
+            right 250px
+            top 82px
+        @media(min-width $grid-lg)
+            right 365px
+            top 60px
+        @media(min-width $grid-xl)
+            right 150px
+            top 35px
+        @media(min-width $grid-xxl)
+            right 350px
+
+    @media(min-width $grid-sm)
+        padding 0 85px
+
+
+
+.comments-slider__item-author-name
+    font-size 13px
+    font-family $font-family-MS
+    color rgb(227, 227, 227)
+    line-height 1.3
+    text-transform uppercase
+    margin-bottom 15px
+
+
+.comments-slider__item-author-company
+    font-size 14px
+    font-family $font-family-CT
+    color rgb(239, 239, 239)
+    font-style italic
+    line-height 1.7
+
+.slick-slide
+    outline none

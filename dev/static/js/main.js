@@ -9,20 +9,36 @@ $(document).ready(function () {
     })
 
 
+    $('.comments-slider').slick({
+        infinite: true,
+        slidesToShow: 1,
+        arrows: false,
+        dots: true,
+        responsive: [
+            {
+                breakpoint: 1106,
+                settings: {
+                    slidesToShow: 1
+                }
+            },
+        ]
+    });
+
+
 
 });
 
 
 
-// //-----------------MOBILE NAVIGATION BUTTON and MOBILE NAVIGATION----------------
+//-----------------MOBILE NAVIGATION BUTTON and MOBILE NAVIGATION----------------
 
-// const menuToggle = document.querySelector('#menu-toggle');
-// const mobileNavToggle = document.querySelector('#mobile-nav');
+const menuToggle = document.querySelector('#menu-toggle');
+const mobileNavToggle = document.querySelector('#mobile-nav');
 
-// menuToggle.onclick = function() {
-//     menuToggle.classList.toggle('menu-icon-active');
-//     mobileNavToggle.classList.toggle('mobile-nav--active');
-// };
+menuToggle.onclick = function() {
+    menuToggle.classList.toggle('menu-icon-active');
+    mobileNavToggle.classList.toggle('mobile-nav--active');
+};
 
 
 

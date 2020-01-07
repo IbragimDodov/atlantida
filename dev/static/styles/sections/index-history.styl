@@ -34,16 +34,23 @@
         content ""
         position absolute
         width 2px
-        height 100%
         background-color #3e3d3d
         bottom -100%
-        right 50%
+        right -5%
+        height 150%
+        @media(min-width $grid-se)
+            right 50%
+            height 100%
+
     @media(min-width $grid-sm)
         left 47.4%
 
 .chronology-year-2015
-    top -35px
-    left 85.7%
+    top -20px
+    left 73.7%
+    @media(min-width $grid-se)
+        top -35px
+        left 85.7%
     @media(min-width $grid-sm)
         top 11px
         left 47.7%
