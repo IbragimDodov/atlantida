@@ -86,6 +86,34 @@
 
 //----------------- FORM BLOCK END ----------------
 
+.general-main-title
+    font-size 20px
+    text-align center
+    display inline-block
+    font-family $font-family-A
+    text-transform uppercase
+    position relative
+    padding 30px 20px
+    margin-bottom 40px
+    color rgb(255, 255, 255)
+
+    @media (min-width: $grid-sm)
+        font-size 24px
+
+    @media (min-width: $grid-md)
+        font-size 35px
+
+    &:after
+        content ""
+        position absolute
+        bottom 0
+        left 0
+        right 0
+        background-repeat repeat
+        height 5px
+        background-image url("../../static/images/general/wave-line.png")
+
+
 .general-title-white
     display inline-block
     position relative

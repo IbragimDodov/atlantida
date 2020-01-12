@@ -1,0 +1,9 @@
+extends ../layout/main
+
+block variables
+	- var title = 'Страница блога'
+	- var pageClass = 'blog-page'
+
+block content
+	include ../sections/blog-intro
+	include ../sections/blog-masonry
